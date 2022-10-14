@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hs_test.databinding.FragmentHomeBinding
 import com.example.hs_test.util.whenStarted
+import com.example.hs_test.view.adapters.ProductsAdapter
 import com.google.android.material.internal.ViewUtils
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
@@ -52,11 +53,11 @@ class HomeFragment : Fragment() {
         for (i in 0 until tabs.childCount) {
             val tab = tabs.getChildAt(i)
             val layoutParams = tab.layoutParams as LinearLayout.LayoutParams
-            layoutParams.marginEnd = ViewUtils.dpToPx(requireContext(), 8).toInt()
+            layoutParams.marginEnd = ViewUtils.dpToPx(requireContext(), 3).toInt()
             layoutParams.marginStart =
-                if (i == 0) ViewUtils.dpToPx(requireContext(), 16).toInt() else 0
+                if (i == 0) ViewUtils.dpToPx(requireContext(), 11).toInt() else 0
+            layoutParams.height = ViewUtils.dpToPx(requireContext(), 42).toInt()
             tab.layoutParams = layoutParams
-            tab.elevation = ViewUtils.dpToPx(requireContext(), 10)
             mBinding.productsCategory.requestLayout()
         }
     }

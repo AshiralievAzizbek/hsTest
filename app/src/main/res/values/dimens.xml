@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_small">8dp</dimen>
-    <dimen name="text_size_default">16sp</dimen>
-    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_s">8dp</dimen>
+    <dimen name="text_size_m">16sp</dimen>
+    <dimen name="margin_m">16dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="appbar_height">200dp</dimen>
+    <dimen name="banner_height">112dp</dimen>
+    <dimen name="banner_width">300dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="navigation_bar_height">56dp</dimen>
+    <dimen name="category_item_width">88dp</dimen>
+    <dimen name="category_item_height">32dp</dimen>
+    <dimen name="category_item_corner_radius">6dp</dimen>
 </resources>

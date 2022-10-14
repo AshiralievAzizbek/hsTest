@@ -9,11 +9,11 @@
         android:name="com.example.hs_test.view.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="56dp" />
+        android:layout_marginBottom="@dimen/navigation_bar_height" />
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="@dimen/navigation_bar_height"
         style="@style/NavigationTabs"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"

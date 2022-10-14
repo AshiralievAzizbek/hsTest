@@ -1,4 +1,4 @@
-package com.example.hs_test.view
+package com.example.hs_test.view.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

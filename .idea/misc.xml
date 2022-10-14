@@ -16,8 +16,14 @@
         <entry key="..\:/Users/Aziz/AndroidStudioProjects/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/Aziz/AndroidStudioProjects/app/src/main/res/layout/product.xml" value="0.18" />
         <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/drawable/a.xml" value="0.192" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/drawable/category_item_bg.xml" value="0.221" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/drawable/category_item_selected.xml" value="0.1935" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/drawable/category_item_selected_bg.xml" value="0.1925" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/drawable/category_item_unselected.xml" value="0.221" />
         <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/drawable/ic_basket_24.xml" value="0.192" />
-        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/layout/fragment_home.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/layout/category_item.xml" value="0.67" />
+        <entry key="..\:/Users/Aziz/AndroidStudioProjects/hsTest/app/src/main/res/layout/fragment_home.xml" value="0.3159090909090909" />
       </map>
     </option>
   </component>

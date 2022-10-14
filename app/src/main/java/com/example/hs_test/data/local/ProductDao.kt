@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.hs_test.data.Product
+import com.example.hs_test.data.model.Product
 import kotlinx.coroutines.flow.Flow
 
 @Dao

@@ -2,7 +2,7 @@ package com.example.hs_test.view
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.hs_test.data.Product
+import com.example.hs_test.data.model.Product
 import com.example.hs_test.data.local.LocalRepository
 import com.example.hs_test.data.remote.RemoteRepository
 import dagger.hilt.android.lifecycle.HiltViewModel

@@ -1,6 +1,6 @@
 package com.example.hs_test.view
 
-import android.annotation.SuppressLint
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,8 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.hs_test.data.model.Banner
 import com.example.hs_test.databinding.FragmentHomeBinding
 import com.example.hs_test.util.whenStarted
+import com.example.hs_test.view.adapters.BannersAdapter
 import com.example.hs_test.view.adapters.ProductsAdapter
 import com.google.android.material.internal.ViewUtils
 import dagger.hilt.android.AndroidEntryPoint
@@ -34,20 +36,35 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val adapter = ProductsAdapter()
+        val productsAdapter = ProductsAdapter()
         mBinding.productsList.layoutManager = LinearLayoutManager(requireContext())
-        mBinding.productsList.adapter = adapter
+        mBinding.productsList.adapter = productsAdapter
 
+        val bannersAdapter = BannersAdapter()
+        mBinding.bannersList.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        mBinding.bannersList.adapter = bannersAdapter
+        bannersAdapter.submitList(getHardcodeBanners())
 
         viewModel.productsFlow.onEach {
-            adapter.submitList(it)
+            productsAdapter.submitList(it)
         }.whenStarted(lifecycleScope)
 
         setLayoutParams()
+
     }
 
+    private fun getHardcodeBanners() = listOf(
+        Banner(
+            id = 0,
+            url = "https://img.freepik.com/free-psd/fast-food-restaurant-social-media-promo-template_23-2149738618.jpg?size=626&ext=jpg"
+        ),
+        Banner(
+            id = 1,
+            url = "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c436e4154440027.6342704c4677a.jpg"
+        )
+    )
 
-    @SuppressLint("RestrictedApi")
     private fun setLayoutParams() {
         val tabs = mBinding.productsCategory.getChildAt(0) as ViewGroup
         for (i in 0 until tabs.childCount) {

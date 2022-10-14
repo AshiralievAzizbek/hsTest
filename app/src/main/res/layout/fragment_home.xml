@@ -51,19 +51,13 @@
                 app:toolbarId="@id/toolbar">
 
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/tmp_image"
-                    android:layout_width="@dimen/banner_width"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/banners_list"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/banner_height"
-                    android:layout_marginStart="@dimen/margin_m"
                     android:layout_marginTop="@dimen/margin_m"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img"
-                    app:layout_collapseMode="parallax"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize10dp" />
+                    app:layout_collapseMode="parallax" />
+
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"

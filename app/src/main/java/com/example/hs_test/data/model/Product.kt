@@ -1,4 +1,4 @@
-package com.example.hs_test.data
+package com.example.hs_test.data.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 

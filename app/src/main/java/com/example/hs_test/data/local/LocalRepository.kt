@@ -1,6 +1,6 @@
 package com.example.hs_test.data.local
 
-import com.example.hs_test.data.Product
+import com.example.hs_test.data.model.Product
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

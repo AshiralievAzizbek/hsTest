@@ -1,6 +1,7 @@
 package com.example.hs_test.data.remote
 
 import com.example.hs_test.data.*
+import com.example.hs_test.data.model.Product
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

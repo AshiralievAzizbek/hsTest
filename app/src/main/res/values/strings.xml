@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">hsTest</string>
+    <string name="menu">Меню</string>
+    <string name="profile">Профиль</string>
+    <string name="basket">Корзина</string>
+    <string name="moscow">Москва</string>
+    <string name="pizza">Пицца</string>
+    <string name="combo">Комбо</string>
+    <string name="deserts">Десерты</string>
+    <string name="drinks">Напитки</string>
+    <string name="price_format">от %1$d р</string>
+    <string name="snacks">Снэки</string>
+</resources>

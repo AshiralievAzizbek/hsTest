@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10dp" parent="">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="iconTint">@color/content_color_variant</item>
+        <item name="iconStartPadding">@dimen/margin_small</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+        <item name="android:textColor">@color/content_color_variant</item>
+    </style>
+
+
+    <style name="CategorySelector" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabMinWidth">88dp</item>
+        <item name="tabBackground">@drawable/category_item_bg</item>
+        <item name="tabIndicator">@null</item>
+        <item name="android:contentInsetStart">12dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="android:textSize">13sp</item>
+        <item name="tabRippleColor">@null</item>
+        <item name="tabTextColor">@color/category_text_color</item>
+        <item name="tabTextAppearance">@style/CategoryItemTextAppearance</item>
+    </style>
+
+    <style name="NavigationTabs" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicator">@null</item>
+        <item name="tabRippleColor">@color/main_variant</item>
+        <item name="tabIconTint">@color/navigation_item_color</item>
+        <item name="tabTextAppearance">@style/NavigationItemTextAppearance</item>
+    </style>
+
+    <style name="CategoryItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="tabTextColor">@color/navigation_item_color</item>
+    </style>
+
+    <style name="NavigationItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

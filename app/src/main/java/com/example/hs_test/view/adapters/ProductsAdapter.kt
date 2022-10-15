@@ -18,8 +18,8 @@ class ProductsAdapter : ListAdapter<Product, ProductsAdapter.ViewHolder>(DiffCal
             binding.apply {
                 productTitle.text = product.name
                 productDescription.text = product.description
-                productPrice.text = itemView.context.getString(R.string.price_format, product.price)
-                productImage.load(product.img)
+                productPrice.text = itemView.context.getString(R.string.price_format, product.price.toString())
+                productImage.load(product.photo)
             }
 
 
